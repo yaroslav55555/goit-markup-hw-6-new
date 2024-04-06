@@ -25,21 +25,96 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="container style-header">
-      <nav class="menu">
+  <header class="header-section">
+    <nav class="mobile-menu">
         <a href="./index.html"
-           class="logo">
-          Web<span class="studio">Studio</span>
+            class="header-site-logo">
+            Web<span class="header-site-logo-studio">Studio</span>
         </a>
-        <a class="mob-menu-ref">
-          <svg class="mob-menu-butt"
-               width="24"
-               height="24">
+        <a class="mobile-menu-button">
+            <svg class="mobile-menu-icon"
+                width="24"
+                height="24">
             <use href="./images/icons.svg#icon-Group-1"></use>
-          </svg>
+            </svg>
         </a>
 
+        <div class="header-modal-window-container">
+            <div class="header-modal-window">
+              <button type="button"
+                      class="close-button">
+                <svg class="close-icon"
+                     width="24"
+                     height="24">
+                  <use href="./images/icons.svg#icon-close-1"></use>
+                </svg>
+              </button>
+        
+              <ul class="header-modal-window-menu">
+                <li class="header-modal-window-menu-item header-modal-window-menu-item-active">Studio</li>
+                <li class="header-modal-window-menu-item">Portfolio</li>
+                <li class="header-modal-window-menu-item">Contacts</li>
+              </ul>
+        
+              <div class="header-modal-window-all-contacts">
+                <address class="header-modal-window-contacts">
+                    <ul class="header-modal-window-contacts-list">
+                      <li class="header-modal-window-contacts-item"><a href="tel:+110001111111"
+                           class="header-modal-window-contacts-phone">+11 (000) 111-11-11 </a></li>
+                    <li class="header-modal-window-contacts-item"><a href="mailto:info@devstudio.com"
+                    class="header-modal-window-contacts-email">info@devstudio.com</a></li>
+                    </ul>
+                  </address>
+            
+                    <ul class="header-modal-window-socials">
+                        <li class="header-modal-window-socials-item">
+                          <a href=""
+                             class="header-modal-window-socials-item-link">
+                            <svg class="icon"
+                                 width="24"
+                                 height="24">
+                              <use href="./images/icons.svg#icon-instagram-2"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="header-modal-window-socials-item">
+                          <a href=""
+                             class="header-modal-window-socials-item-link">
+                            <svg class="icon"
+                                 width="24"
+                                 height="24">
+                              <use href="./images/icons.svg#icon-twitter-1"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="header-modal-window-socials-item">
+                          <a href=""
+                             class="header-modal-window-socials-item-link">
+                            <svg class="icon"
+                                 width="24"
+                                 height="24">
+                              <use href="./images/icons.svg#icon-facebook-1"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="header-modal-window-socials-item">
+                          <a href=""
+                             class="header-modal-window-socials-item-link">
+                            <svg class="icon"
+                                 width="24"
+                                 height="24">
+                              <use href="./images/icons.svg#icon-linkedin-1"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+              </div>
+              
+                </div>
+            </div>
+        </nav>
+          <!-- ==== Modal window ==== -->
+  
   </header>
 
   <main>
@@ -132,7 +207,7 @@
         <li class="third-section-list-element">
           <img src="./images/img.jpg"
                alt="1-worker"
-               class="ourteam-item-img" />
+               class="third-section-list-image" />
           <div class="third-section-team-member">
             <h3 class="third-section-team-member-name">Mark Guerrero</h3>
             <p class="third-section-team-member-title">Product Designer</p>
@@ -185,7 +260,7 @@
                alt="2-worker"
                width="264"
                height="260"
-               class="ourteam-item-img" />
+               class="third-section-list-image" />
           <div class="third-section-team-member">
             <h3 class="third-section-team-member-name">Tom Ford</h3>
             <p class="third-section-team-member-title">Frontend Developer</p>
@@ -238,7 +313,7 @@
                alt="3-worker"
                width="264"
                height="260"
-               class="ourteam-item-img" />
+               class="third-section-list-image" />
           <div class="third-section-team-member">
             <h3 class="third-section-team-member-name">Camila Garcia</h3>
             <p class="third-section-team-member-title">Marketing</p>
@@ -291,7 +366,7 @@
                alt="4-worker"
                width="264"
                height="260"
-               class="ourteam-item-img" />
+               class="third-section-list-image" />
           <div class="third-section-team-member">
             <h3 class="third-section-team-member-name">Daniel Wilson</h3>
             <p class="third-section-team-member-title">UI Designer</p>
