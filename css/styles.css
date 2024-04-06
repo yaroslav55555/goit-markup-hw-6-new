@@ -39,50 +39,57 @@ padding-left: 0;
 
 /** HEADER**/
 
-header  {
+.header {
   border-bottom: 1px solid #e7e9fc;
-  justify-content: space-between;
-  align-items: baseline;
-  text-decoration: none;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-
-.container {
-/* width: 1158px; */
-margin: 0 auto;
-padding: 0 15px 0 15px;
-}
-
-.header-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .menu {
-align-items: center;
-display: flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.menu-elements {
+
+.mob-menu-ref {
+    display: flex;
+    padding: 16px 0;
+}
+
+.backdrop-mob {
+    position: fixed;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.style-header {
   display: flex;
-  gap: 40px;
-}
-.menu-nav-index {display: block;
-  padding: 24px 0; 
+  align-items: center;
 }
 
 .logo {
-font-family: "Raleway", sans-serif;
-font-weight: 700;
-font-size: 18px;
-line-height: 1.17;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #4d5ae5; 
-margin-right: 76px;
-padding-top: 24px;
-padding-bottom: 24px;
-text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  margin-right: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-decoration: none;
 }
 
 .studio {
@@ -92,80 +99,74 @@ text-decoration: none;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
-  }
+}
 
 .menu-elements {
-flex-direction: column;
-background: #ffffff;
-text-align:  center;
-line-height: normal;
-display: flex;
-flex-direction: row;
-gap: 40px;
+  flex-direction: column;
+  background: #fff;
+  line-height: normal;
+  display: flex;
 }
 
 .email-telefon {
-    background: #ffffff;
-    color: #434455;
-    text-decoration: none;
-     transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .email-telefon:last-child {
-  margin-right: 0;
+  background: #fff;
+  color: #434455;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.email-telefon .number {
+  color: #4d5ae5;
 }
 
-  /* .menu-nav-index */
-  .menu-nav-index{
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    display: block;
-    color: #2e2f42;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-.current {
+.menu-nav-index {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
+  text-decoration: none;
   position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.curent {
   color: #404bbf;
 }
 
-.current::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  border-radius: 2px;
-  width: 100%;
-  height: 4px;
-  background: #404bbf;
+.menu-nav-index:hover {
+  color: #404bbf;
 }
-  
-  .menu-nav-index:hover{
-    color: #404bbf;
-  }
-  .menu-nav-index:focus{
-    color: #404bbf;
-  }
- /* .menu-nav-index */
 
- .contacts {
+.menu-nav-index:focus {
+  color: #404bbf;
+}
+
+.contacts {
   font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #434455;
-font-style: normal;
-margin-left: auto;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  font-style: normal;
+  margin-left: auto;
 }
 
 .social-links {
   display: flex;
-  gap: 40px;
-  margin: 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .social-links :hover {
@@ -174,6 +175,11 @@ margin-left: auto;
 .social-links :focus {
   color: #404bbf;
 }
+
+.page-header {
+  display: none;
+}
+
 
 /* <!-- Section-1 --> */
 
