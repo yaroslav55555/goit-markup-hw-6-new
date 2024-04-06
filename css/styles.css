@@ -656,6 +656,7 @@ opacity: 0.3px;
 /* ===== Modal window ===== */
 
 .modal-window-container {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -666,6 +667,10 @@ opacity: 0.3px;
       visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
+  .modal-window-container.is-open {
+    display: block;
+  }
+
   .modal-window {
     position: absolute;
     top: 50%;
@@ -894,6 +899,7 @@ opacity: 0.3px;
   fill: transparent;
   align-items: center;
   margin-right: 8px;
+  border: none;
 }
 
 .privacy-policy-link {
@@ -1040,4 +1046,8 @@ justify-content: center;
 fill: white;
 }
   /* --- */
+
+  .modal-window {
+    width: 90%;
+  }
 }
