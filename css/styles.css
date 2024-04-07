@@ -1183,7 +1183,7 @@ margin-bottom: 8px;} */
 
 @media screen and (min-width: 1158px) {
   .navigation-menu {
-    width: 1150px;
+    width: 1110px;
   }
 
   .second-container-ul {
@@ -1246,7 +1246,7 @@ margin-bottom: 8px;} */
 
   .footer-section-content {
     flex-direction: row;
-    max-width: 1050px;
+    max-width: 1110px;
   }
 
   .footer-section-title {
