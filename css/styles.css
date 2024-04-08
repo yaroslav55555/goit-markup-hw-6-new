@@ -92,13 +92,18 @@ ul {
 
 .navigation-menu {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .mobile-menu {
   padding: 20px 0px;
   display: none;
+}
+
+.navigation-menu-elements {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
 }
 
 .navigation-menu-list {
@@ -133,6 +138,11 @@ ul {
   background: #404bbf;
 }
 
+.navigation-menu-contacts {
+  display: flex;
+  align-items: center;
+}
+
 .navigation-menu-contacts-list {
   display: flex;
   gap: 40px;
@@ -158,6 +168,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .header-site-logo-studio {
@@ -169,7 +180,7 @@ ul {
 .hero-image-section {
   box-sizing: content-box;
   background: #2e2f42;
-  padding: 90px 70px;
+  padding: 72px 0px;
   background-image: url(../images/people-office1.jpg);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -185,6 +196,13 @@ ul {
   align-items: center;
 }
 
+.hero-image-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 70px;
+}
+
 .hero-image-header {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -194,7 +212,7 @@ ul {
   text-align: center;
   color: #ffffff;
   max-width: 350px;
-  margin-bottom: 72px;
+  margin-bottom: 48px;
 }
 
 .order-service-button {
@@ -227,8 +245,15 @@ ul {
 
 .second-section {
   display: flex;
-  padding: 100px 15px;
+  padding: 120px 0;
   justify-content: center;
+}
+
+.second-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
 }
 
 .second-container-ul {
@@ -262,10 +287,6 @@ ul {
   color: #434455;
 }
 
-.second-container-li-text {
-  font-weight: 400;
-}
-
 .second-container-li-icon {
   display: none;
 }
@@ -278,7 +299,14 @@ ul {
 
 .third-section {
   background-color: #f4f4fd;
-  padding: 96px 0;
+  padding: 120px 0;
+}
+
+.third-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
 }
 
 .third-section-header {
@@ -288,8 +316,8 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-bottom: 60px;
-  }
+  margin-bottom: 72px;
+}
 
 .third-section-list {
   display: flex;
@@ -362,7 +390,7 @@ ul {
 }
 
 .third-section-team-member-social-network-icon:hover {
-  background-color: #404bbf
+  background-color: #404bbf;
 }
 .third-section-team-member-social-network-icon:focus {
   background-color: #404bbf;
@@ -378,8 +406,15 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 60px;
-  padding: 90px 15px;
+  padding: 120px 0;
   align-items: center;
+}
+
+.portfolio-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
 }
 
 .portfolio-section-header {
@@ -389,6 +424,7 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .portfolio-section-list {
@@ -427,7 +463,6 @@ ul {
   color: #f4f4fd;
 }
 
-
 .portfolio-section-list-item:hover .portfolio-section-new-information {
   transform: translateY(0%);
 }
@@ -439,6 +474,7 @@ ul {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+  align-items: flex-start;
 }
 
 .portfolio-section-list-item-details-title {
@@ -930,6 +966,7 @@ ul {
 
   .modal-window {
     width: 90%;
+    max-width: 550px;
   }
 }
 
@@ -946,6 +983,10 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 5px;
+  }
+
+  .hero-image-section {
+    padding: 112px 0;
   }
 
   .hero-image-header {
@@ -983,6 +1024,7 @@ ul {
     gap: 64px 24px;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 600px;
   }
 
   .third-section-list-element {
@@ -992,7 +1034,7 @@ ul {
 
   .portfolio-section-list {
     flex-direction: row;
-    gap: 20px;
+    gap: 64px 24px;
     flex-wrap: wrap;
     max-width: 1000px;
     justify-content: center;
@@ -1037,13 +1079,19 @@ ul {
 }
 
 @media screen and (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-    padding: 0 15px;
-  }
-
   .navigation-menu {
     width: 1110px;
+  }
+
+  .hero-image-section {
+    padding: 188px 0;
+  }
+
+  .hero-image-header {
+    font-size: 56px;
+    line-height: 60px;
+    margin-bottom: 48px;
+    max-width: 500px;
   }
 
   .second-container-ul {
@@ -1055,6 +1103,10 @@ ul {
 
   .second-container-li {
     width: 264px;
+  }
+
+  .second-container-li-text {
+    font-weight: 400;
   }
 
   .second-container-li-icon {
@@ -1091,7 +1143,8 @@ ul {
 
   .portfolio-section-list {
     flex-direction: row;
-    gap: 20px;
+    column-gap: 30px;
+    gap: 64px 24px;
     flex-wrap: wrap;
     max-width: 1200px;
     justify-content: center;
